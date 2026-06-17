@@ -21,10 +21,11 @@ let image = document.querySelector('.image');
 //   - The `hobby` paragraph.
 //   - The `location` paragraph.
 
-contentButton.addEventListener('click', function() {
+contentButton.addEventListener('click', function () {
 
-
-
+    myName.innerHTML = "Sylas";
+    myHobby.innerHTML = "I like to go outside and have fun.";
+    myLocation.innerHTML = "I live in Newburgh, Indiana.";
 
 
 
@@ -32,14 +33,28 @@ contentButton.addEventListener('click', function() {
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
-
+image1Button.addEventListener("click",
+    function () {
+        image.src = "https://thfvnext.bing.com/th/id/OIP.QCWbnP6qqZW5BYiqNywRAwHaE8?w=306&h=204&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3";
+    });
 
 
 
 
 // 5. Add an event listener to the `image2Button`
 // 6. When clicked, it should change the source of `image` to another image URL.
-
+image2Button.addEventListener("click",
+    function () {
+        image.src = "https://thfvnext.bing.com/th/id/OIP.EqDjnvMzyn5v8N8foLaUDgHaE2?w=275&h=185&c=7&r=0&o=7&cb=thfvnextfalcon2&dpr=1.3&pid=1.7&rm=3";
+    });
 
 // BONUS
 // 7. Try using different event types for your buttons.
+image1Button.addEventListener("mouseover",
+    function () {
+        myName.innerHTML = "I'm so cool.";
+    });
+image1Button.addEventListener("mouseout",
+    function () {
+        myName.innerHTML = "Sylas";
+    });
